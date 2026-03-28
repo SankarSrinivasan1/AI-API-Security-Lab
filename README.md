@@ -38,13 +38,40 @@ Not theory. Not slides. Actual scripts and configs you can run.
 git clone https://github.com/yourname/ai-api-security-lab
 cd ai-api-security-lab
 docker-compose up
+````
+
+Run your first attack:
+
+```bash
+python prompt-injection/scripts/basic_injection.py
 ```
+
 ---
 
-## Who this is for
+## Folder Guide
 
-- Backend developers working with LLM APIs  
-- Security engineers exploring AI attack surfaces  
-- Builders who suspect their API might be… a little too trusting  
+* `/prompt-injection` → attack scripts
+* `/middleware` → defense code
+* `/zap` → automated scanning
+* `/burp` → manual testing
+* `/semgrep` → static analysis
+* `/threat-modeling` → templates
+
+---
+
+## Important
+
+If your API does not break during testing, you probably didn’t test hard enough.
+
+---
+
+## 📘 Read the Book
+
+This repo is designed to be used with:
+
+**API Security for AI Applications: Practical Defense Strategies for LLMs, Prompt Injection, and Data Leakage**
+
+The book explains *why things break*.
+This lab shows you *how they break and how to fix them*.
 
 ---
