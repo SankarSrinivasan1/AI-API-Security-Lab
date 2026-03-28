@@ -1,4 +1,4 @@
-# 🔐 AI API Security Lab
+# AI API Security Lab
 
 Companion toolkit for the book  
 **API Security for AI Applications: Practical Defense Strategies for LLMs, Prompt Injection, and Data Leakage**
@@ -40,3 +40,7 @@ Clone the repo:
 ```bash
 git clone https://github.com/yourname/ai-api-security-lab
 cd ai-api-security-lab
+
+Start environment:
+'''bash
+docker-compose up
