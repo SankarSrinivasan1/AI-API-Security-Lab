@@ -1,3 +1,7 @@
+// Most devs never configure Burp. 
+// Then they miss half the attack surface.
+// Remove these comment lines.
+
 {
   "project_options": {
     "connections": {
