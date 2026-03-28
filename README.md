@@ -48,17 +48,3 @@ docker-compose up
 - Builders who suspect their API might be… a little too trusting  
 
 ---
-
-## Quick Start
-
-Clone the repo:
-
-```bash
-git clone https://github.com/yourname/ai-api-security-lab
-cd ai-api-security-lab
-```
-
-Start environment:
-'''bash
-docker-compose up
-```
