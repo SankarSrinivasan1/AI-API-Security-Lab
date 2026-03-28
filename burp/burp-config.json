@@ -1,0 +1,25 @@
+{
+  "project_options": {
+    "connections": {
+      "timeout": 10000,
+      "retries": 2
+    },
+    "misc": {
+      "logging": {
+        "requests": true,
+        "responses": true
+      }
+    }
+  },
+  "proxy": {
+    "intercept": {
+      "enabled": true
+    },
+    "history": {
+      "record": true
+    }
+  },
+  "scanner": {
+    "active_scanning": false
+  }
+}
