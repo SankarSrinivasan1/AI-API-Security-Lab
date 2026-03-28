@@ -23,6 +23,7 @@ Optional (recommended):
 ```bash
 git clone https://github.com/yourname/ai-api-security-lab
 cd ai-api-security-lab
+```
 
 ---
 
@@ -106,4 +107,4 @@ Check:
 
 If setup feels too smooth, something is probably misconfigured 🙂
 
-````
+---
