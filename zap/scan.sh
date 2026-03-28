@@ -14,3 +14,7 @@ docker run --rm -v $(pwd):/zap/wrk/:rw \
   -r zap-report.html
 
 echo "Scan complete. Report saved as zap-report.html"
+
+# Why this matters:
+# No one wants to manually click through ZAP UI every time
+# This makes scanning one command → realistic usage
