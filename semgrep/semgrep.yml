@@ -1,0 +1,20 @@
+rules:
+  - id: unsanitized-llm-input
+    patterns:
+      - pattern: llm($INPUT)
+      - pattern-not: sanitize($INPUT)
+    message: "User input passed to LLM without sanitization"
+    severity: WARNING
+    languages: [python, javascript]
+
+  - id: hardcoded-api-key
+    pattern: API_KEY = "..."
+    message: "Hardcoded API key detected"
+    severity: ERROR
+    languages: [python, javascript]
+
+  - id: logging-sensitive-data
+    pattern: log($DATA)
+    message: "Potential logging of sensitive data"
+    severity: WARNING
+    languages: [python, javascript]
