@@ -1,4 +1,4 @@
-# 🧪 Burp Test Cases for AI APIs
+# Burp Test Cases for AI APIs
 
 Use these when intercepting requests.
 
