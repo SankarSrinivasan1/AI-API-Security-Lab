@@ -5,24 +5,39 @@ Companion toolkit for the book
 
 ---
 
-## What is this?
+## What This Is
 
-This is a hands-on lab for testing and securing AI-powered APIs.
+This is a hands-on lab to test, break, and secure AI APIs.
 
-Not theory. Not slides.  
-Actual scripts, configs, and tools you can run.
+Not theory. Not slides. Actual scripts and configs you can run.
 
 ---
 
-## What you can do here
+## What You Can Do
 
-- Run prompt injection attacks against a test API
-- Scan your API using OWASP ZAP
-- Intercept and modify requests using Burp Suite
-- Detect insecure code patterns using Semgrep
-- Apply middleware fixes for real vulnerabilities
-- Use Docker to simulate safe attack environments
+- Run prompt injection attacks
+- Scan your API for vulnerabilities
+- Test input validation failures
+- Simulate real-world abuse cases
+- Fix issues using middleware templates
 
+---
+
+## Tools Included
+
+- OWASP ZAP (automated scanning)
+- Burp Suite Community (manual testing)
+- Semgrep (code analysis)
+- Docker (isolated test environment)
+
+---
+
+## Quick Start
+
+```bash
+git clone https://github.com/yourname/ai-api-security-lab
+cd ai-api-security-lab
+docker-compose up
 ---
 
 ## Who this is for
