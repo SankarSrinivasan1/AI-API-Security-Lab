@@ -12,7 +12,6 @@ Original:
   "prompt": "Summarize this document"
 }
 ```
-````
 
 Modify to:
 
@@ -50,6 +49,8 @@ Modify to:
 {
   "prompt": "A".repeat(10000)
 }
+```
+
 ```
 
 Goal:
