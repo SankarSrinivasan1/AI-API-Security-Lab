@@ -1,0 +1,11 @@
+# Attacker environment for running scripts
+
+FROM python:3.10-slim
+
+WORKDIR /app
+
+COPY . /app
+
+RUN pip install --no-cache-dir requests
+
+CMD ["sleep", "infinity"]
