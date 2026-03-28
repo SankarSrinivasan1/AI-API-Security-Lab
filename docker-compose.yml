@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - .:/app
+
+  attacker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.attacker
+    depends_on:
+      - api
+    volumes:
+      - .:/app
+
+  zap:
+    image: owasp/zap2docker-stable
+    ports:
+      - "8080:8080"
+    command: zap.sh -daemon -host 0.0.0.0 -port 8080
