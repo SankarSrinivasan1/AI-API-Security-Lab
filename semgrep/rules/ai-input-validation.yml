@@ -1,0 +1,28 @@
+rules:
+  - id: ai-unsanitized-input-direct
+    pattern: llm($INPUT)
+    message: "Direct user input passed to LLM without validation"
+    severity: WARNING
+    languages: [python, javascript]
+
+  - id: ai-string-concat-prompt
+    pattern: llm("..." + $INPUT)
+    message: "User input concatenated into prompt without sanitization"
+    severity: WARNING
+    languages: [python, javascript]
+
+  - id: ai-missing-validation-layer
+    patterns:
+      - pattern: |
+          $PROMPT = $INPUT
+          ...
+          llm($PROMPT)
+    message: "No validation layer detected before LLM call"
+    severity: WARNING
+    languages: [python, javascript]
+
+  - id: ai-dangerous-keywords
+    pattern-regex: "(ignore previous instructions|reveal system prompt)"
+    message: "Potential prompt injection pattern detected"
+    severity: INFO
+    languages: [python, javascript]
