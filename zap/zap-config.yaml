@@ -1,0 +1,30 @@
+# OWASP ZAP Configuration
+
+context:
+  name: ai-api-context
+  urls:
+    - http://api:8000
+
+authentication:
+  method: none
+
+sessionManagement:
+  method: cookie
+
+users:
+  - name: test-user
+
+scan:
+  recurse: true
+  inScopeOnly: true
+
+spider:
+  maxDepth: 5
+  maxChildren: 10
+
+activeScan:
+  policy: Default Policy
+
+report:
+  format: html
+  output: zap-report.html
