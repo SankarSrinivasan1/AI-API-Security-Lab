@@ -2,6 +2,7 @@
 
 Companion toolkit for the book  
 **API Security for AI Applications: Practical Defense Strategies for LLMs, Prompt Injection, and Data Leakage**
+![API Security for AI Applications](https://github.com/SankarSrinivasan1/API-Security-for-AI-Applications/blob/main/images/file_00000000a2e0720b9c687ca337e6a239.png)
 
 ---
 
