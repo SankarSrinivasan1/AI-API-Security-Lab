@@ -76,3 +76,8 @@ The book explains *why things break*.
 This lab shows you *how they break and how to fix them*.
 
 ---
+
+## Warning 
+
+This is for educational purpose. Not a complete product.
+
